@@ -1,8 +1,8 @@
 # SteamTools
 
 - 所需附件 - 点击下载
-  - [steamtools](https://cdn.gitlab.wolves.top/wolves/file/-/raw/main/readme/steamtools/steamtools.exe) - 破解工具/[官网] ([SteamTools - 专注单机游戏](https://www.steamtools.net/zn.html))
-  - [storage](https://cdn.gitlab.wolves.top/wolves/file/-/raw/main/readme/steamtools/steamtools.exe) - 游戏签名工具/[Github]([wxy1343/ManifestAutoUpdate: Steam 清单仓库 (github.com)](https://github.com/wxy1343/ManifestAutoUpdate))
+  - [steamtools](https://cdn.gitlab.wolves.top/wolves/file/-/raw/main/readme/steamtools/steamtools.exe) - 破解工具/[官网](https://www.steamtools.net/zn.html)
+  - [storage](https://cdn.gitlab.wolves.top/wolves/file/-/raw/main/readme/steamtools/steamtools.exe) - 游戏签名工具/[Github](https://github.com/wxy1343/ManifestAutoUpdate)
 
 ## 一、下载工具
 
