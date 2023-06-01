@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  spacebar:
+    image: spacebarchat/server:latest-sqlite
+    ports:
+      - "3001:3001"
+    volumes:
+      - spacebar-database:/exec/persistent/database/
+      - spacebar-storage:/exec/persistent/storage
+    environment:
+      DATABASE: "/exec/persistent/database/database.db"
+      STORAGE_PROVIDER: "file"
+      STORAGE_LOCATION: "/exec/persistent/storage/"
+      PORT: "3001"
+volumes:
+  spacebar-database:
+  spacebar-storage:
