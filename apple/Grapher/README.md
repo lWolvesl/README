@@ -2,8 +2,6 @@
 
 - Mac 自带的 Matlab
 
-![截屏2023-06-30 17.56.17](https://file-yangwolves.netlify.app/picgo/202306301756255.png)
-
 ![image-20230630175713400](https://file-yangwolves.netlify.app/picgo/202306301757420.png)
 
 ## 常用快捷键
