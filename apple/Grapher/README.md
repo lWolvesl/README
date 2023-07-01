@@ -2,7 +2,7 @@
 
 - Mac 自带的 Matlab
 
-![image-20230630175713400](https://file-yangwolves.netlify.app/picgo/202306301757420.png)
+![image-20230630175713400](http://i.wolves.top/picgo/202306301757420.png)
 
 ## 常用快捷键
 
@@ -21,4 +21,4 @@
 
 ## 快捷公式面板
 
-![image-20230630175923664](https://file-yangwolves.netlify.app/picgo/202306301759682.png)
+![image-20230630175923664](http://i.wolves.top/picgo/202306301759682.png)

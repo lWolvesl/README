@@ -14,15 +14,15 @@
 
 ## 四、任务栏双击图标
 
-![image-20230203161357342](https://file-yangwolves.netlify.app/picgo/202302031613373.png)![image-20230203163943082](https://file-yangwolves.netlify.app/picgo/202302031639123.png)
+![image-20230203161357342](http://i.wolves.top/picgo/202302031613373.png)![image-20230203163943082](http://i.wolves.top/picgo/202302031639123.png)
 
 ## 五、右键悬浮窗
 
-![image-20230203165451777](https://file-yangwolves.netlify.app/picgo/202302031654824.png)
+![image-20230203165451777](http://i.wolves.top/picgo/202302031654824.png)
 
 ## 六、设置
 
-![image-20230203165515674](https://file-yangwolves.netlify.app/picgo/202302031655708.png)
+![image-20230203165515674](http://i.wolves.top/picgo/202302031655708.png)
 
 ## 七、点击启动steam
 
@@ -30,17 +30,17 @@
 
 - 打开```storage.exe```
 
-![image-20230203164532494](https://file-yangwolves.netlify.app/picgo/202302031645548.png)
+![image-20230203164532494](http://i.wolves.top/picgo/202302031645548.png)
 
 - ```appid```是steam为每个应用设置的id，查找方式为
 
   - 搜索游戏，此处以```底特律变人```为例
 
-  ![image-20230203164727635](https://file-yangwolves.netlify.app/picgo/202302031647702.png)
+  ![image-20230203164727635](http://i.wolves.top/picgo/202302031647702.png)
 
   - 右键点击复制链接
 
-  ![image-20230203164809023](https://file-yangwolves.netlify.app/picgo/202302031648095.png)
+  ![image-20230203164809023](http://i.wolves.top/picgo/202302031648095.png)
 
   - 此处的链接为
 
@@ -49,6 +49,6 @@
   - 得到的 ```1222140```即为app链接
   - 再复制入工具```enter```即可，此时工具会将游戏本体和dlc全部签名，再重启steam进入库即可下载游玩
 
-  ![image-20230203164944300](https://file-yangwolves.netlify.app/picgo/202302031649352.png)
+  ![image-20230203164944300](http://i.wolves.top/picgo/202302031649352.png)
 
-![image-20230203170611123](https://file-yangwolves.netlify.app/picgo/202302031706304.png)
+![image-20230203170611123](http://i.wolves.top/picgo/202302031706304.png)
