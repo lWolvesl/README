@@ -46,7 +46,6 @@
 
   - ``````
     /usr/local/etc/rc.d/tun.sh
-
   - ``````
     ls /dev/net/tun
     ``````
