@@ -37,10 +37,21 @@
 
 - 然后进行以下步骤依次输入命令
 
-  - ```echo -e '#!/bin/sh -e \ninsmod /lib/modules/tun.ko' > /usr/local/etc/rc.d/tun.sh```
-  - ```chmod a+x /usr/local/etc/rc.d/tun.sh```
-  - ```/usr/local/etc/rc.d/tun.sh```
-  - ```ls /dev/net/tun```,这一步结束后会弹出```/dev/net/tun```证明成功了
+  - ```
+    echo -e '#!/bin/sh -e \ninsmod /lib/modules/tun.ko' > /usr/local/etc/rc.d/tun.sh
+    ```
+
+  - ``````
+    chmod a+x /usr/local/etc/rc.d/tun.sh
+
+  - ``````
+    /usr/local/etc/rc.d/tun.sh
+
+  - ``````
+    ls /dev/net/tun
+    ``````
+
+    这一步结束后会弹出```/dev/net/tun```证明成功了
 
 - 使用docker安装zerotier
 
@@ -55,4 +66,4 @@
       -v /var/lib/zerotier-one:/var/lib/zerotier-one zerotier/zerotier-synology:latest
     ```
 
-  - 操作生效后，使用docker的exec进入即可调用zerotier-cli加入自定义网络
+  - 操作生效后，使用`docker`的`exec`进入即可调用`zerotier-cli`加入自定义网络
