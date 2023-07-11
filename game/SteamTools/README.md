@@ -2,7 +2,8 @@
 
 - 所需附件 - 点击可下载(不确保最新版本)也可自行前往官网下载
   - [steamtools](http://cos.wolves.top/install/SteamtoolsSetup.exe) - 破解工具/[官网](https://www.steamtools.net/zn.html)
-  - [storage](http://cos.wolves.top/install/storage.exe) - 游戏签名工具/[Github](https://github.com/wxy1343/ManifestAutoUpdate)
+- 附加信息 - steamtools可以让用户使用自己的账户玩电脑上steam已经下载好的游戏，无论是否用户是否拥有这款游戏（D加密，链接第三方平台-xbox除外的游戏不能使用），因此可以去pdd买几块钱的离线号再下载到自己的电脑上，如果存在此游戏的家庭共享，还可以解锁联机模式和成就系统，并且可以破家庭共享即家庭共享成员可以一起打开游戏而不会被踢下线，否则就只能享受自己账号玩并且拥有云存档这个功能。
+- 哀悼Stroage清单工具的下线，无法再直接使用清单工具省钱。
 
 ## 一、下载工具
 
@@ -26,29 +27,4 @@
 
 ## 七、点击启动steam
 
-## 八、使用```storage```签名游戏以下载
-
-- 打开```storage.exe```
-
-![image-20230203164532494](http://i.wolves.top/picgo/202302031645548.png)
-
-- ```appid```是steam为每个应用设置的id，查找方式为
-
-  - 搜索游戏，此处以```底特律变人```为例
-
-  ![image-20230203164727635](http://i.wolves.top/picgo/202302031647702.png)
-
-  - 右键点击复制链接
-
-  ![image-20230203164809023](http://i.wolves.top/picgo/202302031648095.png)
-
-  - 此处的链接为
-
-  ```https://store.steampowered.com/app/1222140/_/```
-
-  - 得到的 ```1222140```即为app链接
-  - 再复制入工具```enter```即可，此时工具会将游戏本体和dlc全部签名，再重启steam进入库即可下载游玩
-
-  ![image-20230203164944300](http://i.wolves.top/picgo/202302031649352.png)
-
-![image-20230203170611123](http://i.wolves.top/picgo/202302031706304.png)
+- 此时就可以玩所有存在于本地电脑的游戏（使用自己账户）
