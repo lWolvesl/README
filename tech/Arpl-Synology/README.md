@@ -66,3 +66,46 @@
     ```
 
   - 操作生效后，使用`docker`的`exec`进入即可调用`zerotier-cli`加入自定义网络
+
+## Alist
+
+一个支持多种存储，支持网页浏览和 WebDAV 的文件列表程序，由 gin 和 Solidjs 驱动。
+
+- [官方文档](https://alist.nn.ci/zh/)
+
+### 挂载本地- Rclone
+
+- 安装
+
+  ```shell
+  curl https://rclone.org/install.sh | sudo bash
+  ```
+
+- work
+
+- ln -s /bin/fusermount /bin/fusermount3
+
+rclone mount alist: /alist --use-mmap --umask 000 --allow-other --allow-non-empty --dir-cache-time 24h --cache-dir=/home/cache --vfs-cache-mode full --buffer-size 512M --vfs-read-chunk-size 16M --vfs-read-chunk-size-limit 64M --vfs-cache-max-size 10G --daemon
+
+
+
+https://github.com/alist-org/alist/discussions/2278
+
+
+
+rclone mount alist:/Aliyun/movies /volume1/docker/jellyfin/movies --cache-dir /.cache -v --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --buffer-size=256M --vfs-read-chunk-size=256M --vfs-read-chunk-size-limit=500M --vfs-cache-mode=full --vfs-cache-max-size=15G --dir-cache-time=1h --vfs-cache-max-age=24h --poll-interval=10m
+
+
+
+挂载命令：rclone mount DriveName:Folder LocalFolder
+
+卸载命令：fusermount -qzu LocalFolder
+
+## Jellyfin
+
+- 视频站
+
+```shell
+docker run -d --name jellyfin -v /volume1/docker/jellyfin/config:/config -p 8096:8096 -p 8920:8920 --device=/dev/dri/renderD128 --restart=always jellyfin/jellyfin
+```
+
