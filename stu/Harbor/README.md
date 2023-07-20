@@ -58,7 +58,7 @@ cd /harbor
 
 - 可以看到如下文件
 
-![image-20230720163951841](http://i.wolves.top/picgo/202307201639948.png)
+![image-20230720163951841](https://i.wolves.top/picgo/202307201639948.png)
 
 - 将`harbor.yml.tmpl`文件名改为`harbor.yml`
 
@@ -76,7 +76,7 @@ vi harbor.yml
 
 1. hostname 修改为你的 hostname
 
-2. https 中的证书文件 ![image-20230720164258381](http://i.wolves.top/picgo/202307201642427.png) 将其修改为 ![image-20230720164412109](http://i.wolves.top/picgo/202307201644153.png)
+2. https 中的证书文件 ![image-20230720164258381](https://i.wolves.top/picgo/202307201642427.png) 将其修改为 ![image-20230720164412109](https://i.wolves.top/picgo/202307201644153.png)
 
    此处的证书文件，需要退出容器，在宿主机的映射目录中放入响应文件
 
@@ -121,4 +121,4 @@ docker run -d \
 
 - 在portainer添加即可在portainer主页管理内部容器状态
 
-![image-20230720165659190](http://i.wolves.top/picgo/202307201656229.png)
+![image-20230720165659190](https://i.wolves.top/picgo/202307201656229.png)
