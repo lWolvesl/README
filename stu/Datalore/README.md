@@ -1,0 +1,42 @@
+# Datalore
+
+```docker pull jetbrains/datalore-agent```
+
+```docker-compose
+version: "3.9"
+services:
+  datalore:
+    image: jetbrains/datalore-server:2023.3.1
+    ports:
+      - "8080:8080"
+    expose: [ "8081", "5050", "4060" ]
+    networks:
+      - datalore-agents-network
+      - datalore-backend-network
+    volumes:
+      - "datalore-storage:/opt/data"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    environment:
+      #DATALORE_PUBLIC_URL: "https://datalore.example.com"
+      DB_PASSWORD: "changeme"
+      DATABASES_DOCKER_NETWORK: "datalore-agents-network"
+      SQL_SESSION_DOCKER_NETWORK: "datalore-agents-network"
+  postgresql:
+    image: jetbrains/datalore-postgres:2023.3.1
+    expose: [ "5432" ]
+    networks:
+      - datalore-backend-network
+    volumes:
+      - "postgresql-data:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_PASSWORD: "changeme"
+volumes:
+  postgresql-data: { }
+  datalore-storage: { }
+networks:
+  datalore-agents-network:
+    name: datalore-agents-network
+  datalore-backend-network:
+    name: datalore-backend-network
+```
+
