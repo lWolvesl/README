@@ -1,5 +1,7 @@
 # Graph
 
+- [摆线](#%E6%91%86%E7%BA%BF)
+
 ## 摆线
 
 ![摆线](https://i.wolves.top/picgo/202308101816491.gif)
