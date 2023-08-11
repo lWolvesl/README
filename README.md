@@ -4,4 +4,4 @@
 
 ## 快速直达
 
-- [math/graph](math/graph)
+- [math/Graph](math/Graph)
