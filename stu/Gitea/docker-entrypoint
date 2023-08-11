@@ -1,0 +1,6 @@
+#!/bin/ash
+
+nohup /app/tun.sh >> /app/tun.log &
+
+chown -R git:git /data
+su - git -c /app/start.sh

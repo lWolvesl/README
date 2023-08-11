@@ -1,0 +1,25 @@
+FROM alpine
+
+RUN echo "http://mirrors.sjtug.sjtu.edu.cn/alpine/latest-stable/main" > /etc/apk/repositories
+RUN echo "http://mirrors.sjtug.sjtu.edu.cn/alpine/latest-stable/community" >> /etc/apk/repositories
+
+RUN apk update
+RUN apk add iproute2 git bash --no-cache
+
+RUN mkdir /app
+RUN mkdir /data
+
+COPY ./tun2socks-linux-amd64 /app/tun2socks
+COPY ./gitea-1.20.2-linux-amd64 /app/gitea
+COPY ./docker-entrypoint /docker-entrypoint
+COPY ./tun.sh /app/tun.sh
+COPY ./start.sh /app/start.sh
+
+RUN adduser -D git
+RUN echo 'git:git' | chpasswd
+
+RUN chown -R git:git /app
+RUN chown -R git:git /data
+RUN chown -R git:git /app/start.sh
+
+ENTRYPOINT [ "/docker-entrypoint" ]
