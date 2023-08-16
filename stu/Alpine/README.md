@@ -16,3 +16,17 @@ echo "http://mirrors.sjtug.sjtu.edu.cn/alpine/latest-stable/main" > /etc/apk/rep
 echo "http://mirrors.sjtug.sjtu.edu.cn/alpine/latest-stable/community" >> /etc/apk/repositories
 ```
 
+## 设置时间
+
+```shell
+apk add tzdata
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+echo "Asia/Shanghai" > /etc/timezone
+```
+
+## 查看端口占用
+
+```shell
+netstat -atunlp
+```
+

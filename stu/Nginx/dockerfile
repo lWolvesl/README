@@ -1,0 +1,15 @@
+FROM nginx:1.24.0
+
+RUN apt update
+RUN apt install iproute2 -y
+
+RUN mkdir /tun
+
+COPY ./docker-entrypoint.sh /docker-entrypoint.sh
+COPY ./tun.sh /tun/
+COPY ./tun2socks /tun/
+
+RUN chmod +x /rtn/tun2socks
+RUN chmod +x /docker-entrypoint.sh
+
+ENTRYPOINT [ "/docker-entrypoint.sh" ]
