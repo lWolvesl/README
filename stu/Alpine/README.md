@@ -30,3 +30,9 @@ echo "Asia/Shanghai" > /etc/timezone
 netstat -atunlp
 ```
 
+## 破虚拟化
+
+```shell
+apk add util-linux
+```
+
