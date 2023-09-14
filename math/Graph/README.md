@@ -26,3 +26,5 @@
    **面积** ![image-20230914122829418](https://i.wolves.top/picgo/202309141228527.png)
 
 ​		3 pai a^2 / 8
+
+​		![image-20230914123152051](https://i.wolves.top/picgo/202309141231080.png)
