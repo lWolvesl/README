@@ -22,3 +22,7 @@
 ![undefined](https://i.wolves.top/picgo/202308102041169.gif)
 
 ![image-20230810205028843](https://i.wolves.top/picgo/202308102050894.png)
+
+   **面积** ![image-20230914122829418](https://i.wolves.top/picgo/202309141228527.png)
+
+​		3 pai a^2 / 8

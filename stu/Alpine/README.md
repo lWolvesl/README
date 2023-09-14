@@ -30,7 +30,7 @@ echo "Asia/Shanghai" > /etc/timezone
 netstat -atunlp
 ```
 
-## 破虚拟化
+## CPU计数器
 
 ```shell
 apk add util-linux
