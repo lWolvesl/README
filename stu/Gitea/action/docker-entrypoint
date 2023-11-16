@@ -1,0 +1,4 @@
+#!/bin/ash
+
+cd /
+./act_runner daemon

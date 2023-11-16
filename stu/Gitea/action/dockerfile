@@ -1,0 +1,13 @@
+FROM alpine
+
+RUN echo "http://mirrors.sjtug.sjtu.edu.cn/alpine/latest-stable/main" > /etc/apk/repositories
+RUN echo "http://mirrors.sjtug.sjtu.edu.cn/alpine/latest-stable/community" >> /etc/apk/repositories
+
+COPY ./act_runner /act_runner
+COPY ./docker-entrypoint /docker-entrypoint
+COPY ./.runner /.runner
+
+RUN chmod +x /act_runner
+RUN chmod +x /docker-entrypoint
+
+ENTRYPOINT [ "/docker-entrypoint" ]
