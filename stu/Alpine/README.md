@@ -19,7 +19,7 @@ echo "http://mirrors.sjtug.sjtu.edu.cn/alpine/latest-stable/community" >> /etc/a
 ## 设置时间
 
 ```shell
-apk add tzdata
+apk add tzdata --no-cache
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 echo "Asia/Shanghai" > /etc/timezone
 ```
