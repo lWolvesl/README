@@ -15,9 +15,9 @@ docker run -itd --name gitea -p 56000:3000 -p 56022:22 -v /data/gitea:/data gite
 - [设置apk和时间](../Alpine)
 
 ```shell
-apk add git --no-cache
+apk add git bash --no-cache
 adduer git
-/data/app/gitea web --config /data/gitea/conf/app.ini
+su git -c '/data/app/gitea web --config /data/gitea/conf/app.ini'
 ```
 
 

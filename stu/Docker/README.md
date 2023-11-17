@@ -2,6 +2,10 @@
 
 [回到主页](../README.md)
 
+## 拉取不同架构
+
+![image-20231117141513993](https://i.wolves.top/picgo/202311171415200.png)
+
 ### Docker镜像加速
 
 ```json
