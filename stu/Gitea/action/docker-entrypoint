@@ -1,4 +1,13 @@
 #!/bin/ash
 
-cd /
-./act_runner daemon
+cd app
+
+config_path="/app/.runner"
+
+if [ -f "$config_path" ]; then
+    echo "文件 '$config_path' 存在."
+    /app/act_runner daemon
+else
+    echo "文件 '$config_path' 不存在."
+    /app/act_runner register
+fi
