@@ -5,3 +5,4 @@
 ## 快速直达
 
 - [math/Graph](math/Graph)
+- [AI/ML](AI/ML)
