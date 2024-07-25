@@ -41,4 +41,3 @@ $$
 $$
 \underset{w,b}{minimize}\ J(w,b)
 $$
-
