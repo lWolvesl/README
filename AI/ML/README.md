@@ -41,3 +41,29 @@ $$
 $$
 \underset{w,b}{minimize}\ J(w,b)
 $$
+
+- 三维转二维-等高线原理
+
+### 2.2 Gridient Descent
+
+- 在当前的节点找下降速度最快的方向走一步，然后再找下一个方向，最终达到局部最小值`loacl minima`（贪心）
+
+$$
+w = w - \alpha\cdot\frac{\partial J(w,b)}{\partial w} \\
+b = b - \alpha\cdot\frac{\partial J(w,b)}{\partial b} 
+$$
+
+- $ \alpha $ is learning rate
+- Simultaneously update
+  - It mains we need calculate first , then update both of the value
+- Here is negative gradient
+
+### 2.3 Learning Rate
+
+- Small
+  - Gradient descent may be slow
+- Large
+  - Gradient descent may 
+    - Overshoot
+    - Fail to converge
+    - Diverge
