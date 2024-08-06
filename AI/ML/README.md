@@ -49,8 +49,11 @@ $$
 - 在当前的节点找下降速度最快的方向走一步，然后再找下一个方向，最终达到局部最小值`loacl minima`（贪心）
 
 $$
-w = w - \alpha\cdot\frac{\partial J(w,b)}{\partial w} \\
-b = b - \alpha\cdot\frac{\partial J(w,b)}{\partial b} 
+w = w - \alpha\cdot\frac{\partial J(w,b)}{\partial w}
+$$
+
+$$
+b = b - \alpha\cdot\frac{\partial J(w,b)}{\partial b}
 $$
 
 - $ \alpha $ is learning rate
@@ -58,7 +61,7 @@ $$
   - It mains we need calculate first , then update both of the value
 - Here is negative gradient
 
-### 2.3 Learning Rate
+**Learning Rate**
 
 - Small
   - Gradient descent may be slow
@@ -67,3 +70,51 @@ $$
     - Overshoot
     - Fail to converge
     - Diverge
+
+![](https://i.wolves.top/picgo/202408041059271.png)
+
+**Batch**
+
+- Each step of gradient descent
+
+### 2.3 Multiple features (variables)
+
+$$
+\ {\vec{x}^{(2)}_{3}} = \begin{bmatrix} x_1 & x_2 & x_3 & x_4 \end{bmatrix}
+$$
+
+- $x_j = j^{th}$(feature)
+- $n$ : number of features
+- $\vec{x}^{(i)}$ : features of ($i^{th}$) training example
+- $x_j^{(i)}$ : value of feature $j$ in ($i^{th}$) training example 
+
+#### 2.3.1 Model
+
+- Previously
+  $$
+  f_{w,b}(x) = wx + b
+  $$
+
+- Now 
+  
+  multiple linear regression
+  $$
+  f_{w,b}(x) = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b
+	$$
+
+  equals
+  
+  $$
+  \vec{w} = \begin{bmatrix} w_1 & w_2 & w_3 & \cdots & w_n \end{bmatrix}
+  $$
+  
+  $$
+  \vec{x} = \begin{bmatrix} x_1 & x_2 & x_3 & \cdots & x_n \end{bmatrix}
+  $$
+  
+  $$
+  f_{\vec{w} \cdot,b}(\vec{x}) = \vec{w} \cdot \vec{x} + b
+  $$
+  
+  It is not moltivariate regression(多个自变量和因变量的关系，即矩阵和矩阵)
+
