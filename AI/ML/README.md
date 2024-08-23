@@ -83,7 +83,7 @@ $$
 \ {\vec{x}^{(2)}_{3}} = \begin{bmatrix} x_1 & x_2 & x_3 & x_4 \end{bmatrix}
 $$
 
-- $x_j = j^{th}$(feature)
+- $x_j$ = $j^{th}$(feature)
 - $n$ : number of features
 - $\vec{x}^{(i)}$ : features of ($i^{th}$) training example
 - $x_j^{(i)}$ : value of feature $j$ in ($i^{th}$) training example 
