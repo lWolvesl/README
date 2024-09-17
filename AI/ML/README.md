@@ -118,3 +118,29 @@ $$
   
   It is not moltivariate regression(多个自变量和因变量的关系，即矩阵和矩阵)
 
+#### 2.3.2 Verctorization
+
+$$
+f_{\vec{x},b}(\vec{x})=(\sum_{n}^{j=1}w_jx_j)+b
+$$
+
+- In python
+
+```python
+f = 0
+for j in range(0, n):
+  f += w[j] * x[j]
+f += b
+```
+
+- or (and it will be faster and more effective than the top one)
+
+```python
+f = np.dot(w, x) + b
+```
+
+- What makes differences - vectorization
+  - Parallel
+  - Reduce the overhead of loops （循环开销)
+  - CPU support (SIMD 单指令多数据)
+  - Reduced python interpreter intervention
