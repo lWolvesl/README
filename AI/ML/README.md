@@ -1,5 +1,7 @@
 # Machine Learning
 
+- Please view the [blog](https://www.wolves.top/blog/ml/) to avoid rendering issues
+
 ## 1.First chapter - instruction
 
 ### 1.1 supervised learning
@@ -49,11 +51,11 @@ $$
 - 在当前的节点找下降速度最快的方向走一步，然后再找下一个方向，最终达到局部最小值`loacl minima`（贪心）
 
 $$
-w = w - \alpha\cdot\frac{\partial J(w,b)}{\partial w}
+w_j = w_j - \alpha\cdot\frac{\partial J(W,b)}{\partial w_j}
 $$
 
 $$
-b = b - \alpha\cdot\frac{\partial J(w,b)}{\partial b}
+b = b - \alpha\cdot\frac{\partial J(W,b)}{\partial b}
 $$
 
 - $ \alpha $ is learning rate
@@ -121,7 +123,7 @@ $$
 #### 2.3.2 Verctorization
 
 $$
-f_{\vec{x},b}(\vec{x})=(\sum_{n}^{j=1}w_jx_j)+b
+f_{\vec{x},b}(\vec{x})=(\sum_{n}^{j=1}\vec{w_j}\cdot\vec{x_j})+b
 $$
 
 - In python
@@ -141,6 +143,48 @@ f = np.dot(w, x) + b
 
 - What makes differences - vectorization
   - Parallel
-  - Reduce the overhead of loops （循环开销)
+  - Reduce the overhead of loops (循环开销)
   - CPU support (SIMD 单指令多数据)
   - Reduced python interpreter intervention
+
+### 2.4 Cost function of multiple features
+
+- similar to single feature
+$$
+J(\vec{w},b) = \frac{1}{2m} \sum_{i=1}^{m} (y^{(i)} - f_{\vec{w},b}(\vec{x}^{(i)}))^2
+$$
+
+$$
+w_j = w_j - \alpha\cdot\frac{\partial J(\vec{W},b)}{\partial w_j}
+$$
+
+$$
+b = b - \alpha\cdot\frac{\partial J(\vec{W},b)}{\partial b}
+$$
+
+- feature vector
+
+$$
+\vec{x}^{(i)} = \begin{bmatrix} x_1^{(i)} & x_2^{(i)} & x_3^{(i)} & \cdots & x_n^{(i)} \end{bmatrix}
+$$
+
+$$w_1 = w_1 - \alpha\cdot\frac{1}{m}\sum_{i=1}^{m}(f_{\vec{w},b}(\vec{x}^{(i)}) - y^{(i)})x_1^{(i)} $$
+
+$$w_n = w_n - \alpha\cdot\frac{1}{m}\sum_{i=1}^{m}(f_{\vec{w},b}(\vec{x}^{(i)}) - y^{(i)})x_n^{(i)} $$
+
+$$b = b - \alpha\cdot\frac{1}{m}\sum_{i=1}^{m}(f_{\vec{w},b}(\vec{x}^{(i)}) - y^{(i)}) $$
+
+- it must be `simultaneously update`
+
+#### An alternative way
+
+- Normal equation - 求极值
+  - only for linear regression
+  - solve for $\vec{w}$ and $b$ without iteration
+  - slow when the number of features is large(> 10000)
+  - it is a closed-form solution
+  - it is not a vectorization
+  - it is not a parallel
+  - it is not a reduce the overhead of loops
+  - it is not a CPU support
+  - it is not a reduced python interpreter intervention
